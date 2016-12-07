@@ -1,0 +1,125 @@
+.card {
+    border:1px solid #000000;
+    width: 80%;
+    border-radius: 8px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:10px;
+    display:inline-block;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    height: 100%;
+    overflow: auto;
+    }
+
+.unic {
+    font-size: 18px;
+}
+/*For header*/
+.header img {
+  float: left;
+}
+
+.header h1 {
+  position: relative;
+  top: 45px;
+  color: #0F4279;
+  text-align: center;
+  font-size: 35px;
+}
+
+/*For header end*/
+body {
+    background: url("bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p {
+    font-family: verdana;
+    font-size: 18px;
+    color: #0F4279;
+}
+
+footer{
+    background-color: #0F4279;
+}
+.footer p {
+    color: white;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Navigation Bar*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 12px;
+  overflow: hidden;
+  background-color: #0F4279;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 19px;
+  font-family: arial;
+}
+
+ul.topnav li a:hover {background-color: white; color: #0F4279;}
+
+ul.topnav li.icon {display: none;}
+
+textarea{
+    font-size: 18px;
+    height: 8em;
+    width: 63em;
+}
+
+input {
+    font-size: 18px;
+}
+
+button{
+    font-size: 19px;
+    color: white;
+    background-color: #0F4279;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  textarea{
+      height: 8em;
+      width: 21em;
+  }
+}
